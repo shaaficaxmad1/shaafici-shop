@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BrightTech Solutions - Normal Flow Practice</title>
+<style>
+  /* Universal box-sizing */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #e6f0ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header, footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  nav {
+    float: left;
+    width: 180px;
+    background-color: #cce0ff;
+    padding: 20px 15px;
+    margin: 0 25px 0 0;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-bottom: 12px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    color: #0073e6;
+  }
+
+  main {
+    margin-left: 220px; /* nav width + margin */
+    background-color: #ffffff;
+    padding: 25px 30px;
+    min-height: 400px;
+  }
+
+  /* Separate Boxes first */
+  #boxA, #boxB {
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #004080;
+    background-color: #cce6ff;
+    width: 400px;
+    height: 200px;
+  }
+
+  #boxB {
+    width: 200px; /* Half width */
+    height: 100px; /* Half height */
+    border-color: #0073e6;
+    background-color: #99ccff;
+  }
+
+  /* Combined box example */
+  #box1 {
+    margin: 40px 0 20px 0;
+    padding: 25px;
+    border: 3px solid #004080;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    background-color: #cce6ff;
+    color: #003366;
+    font-weight: bold;
+  }
+
+  #box2 {
+    margin: 30px;
+    padding: 10px;
+    border: 3px solid #0073e6;
+    width: 50%; /* half width */
+    height: 50%; /* half height */
+    background-color: #99ccff;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: #003366;
+    font-weight: normal;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  ol {
+    margin-top: 25px;
+    padding-left: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BrightTech Solutions</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Welcome to BrightTech Solutions</h2>
+  <p>BrightTech Solutions is a leading innovator in cutting-edge technology, providing smart software and hardware solutions for businesses worldwide.</p>
+  <p>Our mission is to empower organizations through scalable and reliable IT infrastructure, tailored to meet the unique demands of each client.</p>
+  <p>We pride ourselves on exceptional customer service, technical excellence, and continuous innovation.</p>
+
+  <ol>
+    <li>Custom software development</li>
+    <li>Cloud infrastructure and support</li>
+    <li>IT consulting and strategy</li>
+  </ol>
+
+  <!-- First: Two separate boxes -->
+  <div id="boxA">Box A - Main Company Overview<br>
+    Margin, border, padding, width: 400px, height: 200px
+  </div>
+
+  <div id="boxB">Box B - Secondary Info<br>
+    Half the size of Box A
+  </div>
+
+  <!-- Then: Combined boxes -->
+  <div id="box1">
+    Box 1 - Main Company Overview
+    <div id="box2">
+      Box 2 - Nested inside Box 1<br>
+      Half size of Box 1
+    </div>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 BrightTech Solutions. All rights reserved.
+</footer>
+
+</body>
+</html>
